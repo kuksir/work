@@ -1,0 +1,11 @@
+table tbody{ 
+counter-reset: rowNumber;
+ } 
+
+table tbody tr { 
+counter-increment: rowNumber;
+ } 
+
+table tbody tr th:first-child::before { 
+content: counter(rowNumber); 
+ }
